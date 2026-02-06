@@ -1,0 +1,34 @@
+lhok-react/
+├── node_modules/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── assets/              ← Static files (images, fonts)
+│       ├── images/
+│       └── fonts/
+├── src/
+│   ├── components/          ← Reusable UI components
+│   │   ├── common/          ← Shared components (Button, Card, etc.)
+│   │   │   ├── Header/
+│   │   │   ├── Footer/
+│   │   │   └── Button/
+│   │   └── features/        ← Feature-specific components
+│   │       ├── Profile/
+│   │       └── Community/
+│   ├── pages/               ← Page-level components (routes)
+│   │   ├── Home/
+│   │   ├── Community/
+│   │   └── Profile/
+│   ├── hooks/               ← Custom React hooks
+│   ├── context/             ← React Context for global state
+│   ├── services/            ← API calls, Firebase functions
+│   ├── utils/               ← Helper functions
+│   ├── styles/              ← Global styles
+│   │   ├── globals.css
+│   │   └── variables.css
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
