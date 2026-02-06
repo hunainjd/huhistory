@@ -1,0 +1,1 @@
+export { default } from './Home'; // replace Home with the file required

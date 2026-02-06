@@ -32,3 +32,12 @@ lhok-react/
 ├── .gitignore
 ├── package.json
 └── README.md
+
+
+
+Website purpose
+- contact-me
+- about me
+- Admin, new project upload and blog
+- projects I built (show a thumbnail)
+- click into thumbnail to lead to a page about the project/blog
