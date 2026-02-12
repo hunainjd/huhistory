@@ -1,11 +1,19 @@
 /* Header Container */
 .header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, var(--color-primary) 1%,var(--color-white) 100%);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  left: 0;
+  right: 0;
+  z-index: var(--z-index-fixed);
   border-bottom: 1px solid #e0e0e0;
+  margin: 0;
+  padding: var(--spacing-sm);
+  box-sizing: border-box;
+  
+  /* Content control */
+  overflow: visible; /* Changed from hidden to prevent clipping */
+  
 }
 
 .header-container {

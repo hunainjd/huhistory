@@ -1,54 +1,128 @@
-/* CSS Variables for Theming */
 :root {
-  /* Colors */
-  --color-primary: #0066cc;
-  --color-primary-dark: #0052a3;
-  --color-primary-light: #e8f4f8;
+  /* ============================================
+      COLOURS
+      ============================================ */
+   /* Primary Brand Colours */
+    --color-primary: #b54dbc;
+    --color-primary-dark: #9a3ea3;
+
+    /* Secondary Brand Colours*/
+    --color-secondary: #333333;
+    --color-secondary-dark: #333333;
+    
+    /* Neutral Colours*/
+    --color-white: #ffffff;
+    --color-gray-dark: #333333;
+    --color-gray-medium: #666666;
+    --color-gray-light: #e0e0e0;
+    
+    /* Semantic color names */
+    --color-text-primary: var(--color-secondary);
+    --color-text-secondary: var(--color-secondary-dark);
+
+    /* Background Colours*/
+    --color-bg-primary:var(--color-white);
+    --color-bg-secondary: var(--color-gray-light);
+
+    /* Links */
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-white);
+
+    /* Status Colours*/
+    --color-success: #4CAF50;
+    --color-error: #f44336;
+    --color-warning: #ff9800;
+    --color-info: #2196F3;
+
+  /* ============================================
+    TYPOGRAPHY
+    ============================================ */
+    /* Headers */
+    --font-family-primary: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      /* paragraph, normal text, links */
+    --font-family-secondary: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    /* Font sizes - using rem for accessibility */
+    --font-size-xs: 0.75rem;      /* 12px */
+    --font-size-sm: 0.875rem;     /* 14px */
+    --font-size-base: 1rem;       /* 16px */
+    --font-size-lg: 1.125rem;     /* 18px */
+    --font-size-xl: 1.25rem;      /* 20px */
+    --font-size-2xl: 1.5rem;      /* 24px */
+    --font-size-3xl: 2rem;        /* 32px */
+    --font-size-4xl: 2.5rem;      /* 40px */
+    --font-size-5xl: 3rem;        /* 48px */
+   
+    /* Font weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+    
+  /* ============================================
+      SPACING
+      ============================================ */
+    --spacing-xs: 0.25rem;   /* 4px */
+    --spacing-sm: 0.5rem;    /* 8px */
+    --spacing-md: 1rem;      /* 16px */
+    --spacing-lg: 1.5rem;    /* 24px */
+    --spacing-xl: 2rem;      /* 32px */
+    
+  /* ============================================
+      LAYOUT
+      ============================================ */
+    --header-height: 100px;
+    --footer-height: 100px;
+    --max-content-width: 1200px;
+    
+    /* Logo dimensions */
+    --logo-height-header: 75px;
+    --logo-height-footer: 60px;
   
-  --color-secondary: #6c757d;
-  --color-success: #4CAF50;
-  --color-danger: #f44336;
-  --color-warning: #ff9800;
-  --color-info: #2196F3;
-  
-  /* Grays */
-  --color-white: #ffffff;
-  --color-gray-100: #f8f9fa;
-  --color-gray-200: #e9ecef;
-  --color-gray-300: #dee2e6;
-  --color-gray-400: #ced4da;
-  --color-gray-500: #adb5bd;
-  --color-gray-600: #6c757d;
-  --color-gray-700: #495057;
-  --color-gray-800: #343a40;
-  --color-gray-900: #212529;
-  --color-black: #000000;
-  
-  /* Typography */
-  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  --font-size-base: 1rem;
-  --font-size-sm: 0.875rem;
-  --font-size-lg: 1.125rem;
-  
-  /* Spacing */
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-xxl: 3rem;
-  
-  /* Border Radius */
-  --border-radius-sm: 4px;
-  --border-radius-md: 6px;
-  --border-radius-lg: 8px;
-  --border-radius-xl: 12px;
-  
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.15);
-  
-  /* Transitions */
-  --transition-base: all 0.2s ease;
+  /* ============================================
+      BORDERS & RADIUS
+  ============================================ */   
+    --border-width-thin: 1px;
+    --border-width-medium: 2px;
+    --border-width-thick: 4px;
+    
+    --border-radius-sm: 4px;
+    --border-radius-md: 6px;
+    --border-radius-lg: 8px;
+    --border-radius-xl: 12px;
+    --border-radius-full: 9999px;
+    
+  /* ============================================
+      TRANSITIONS & ANIMATIONS
+      ============================================ */
+    --transition-speed-fast: 0.15s ease;
+    --transition-speed-normal: 0.10s ease;
+    --transition-speed-slow: 0.5s ease;
+    --transition-easing: ease;
+    
+  /* ============================================
+      SHADOWS
+      ============================================ */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+    /* ============================================
+       Z-INDEX SCALE
+       ============================================ */
+    --z-index-base: 1;
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-tooltip: 1070;
+    
+    /* ============================================
+       BREAKPOINTS (for reference in media queries)
+       ============================================ */
+    /* --breakpoint-sm: 576px; */
+    /* --breakpoint-md: 768px; */
+    /* --breakpoint-lg: 992px; */
+    /* --breakpoint-xl: 1200px; */
 }

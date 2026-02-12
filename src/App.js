@@ -1,18 +1,27 @@
+// Import Modules
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Import Components
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
-import Home from './pages/Home';
-import './styles/globals.css';
+
+// Import css styles
+import './styles/global.css';
 import './styles/variables.css';
+import './index.css'
 import './App.css';
+
+
 function App() {
+
+  // This is the HTML that is shown
   return (
     <div className="App">
       <Header />
       
       <main className="main-content">
         <div className="container">
-          <h1>Welcome to ProfileHub</h1>
+          <h1>Welcome to LHOK</h1>
           <p className="subtitle">
             Connect with professionals and showcase your expertise
           </p>
